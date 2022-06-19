@@ -7,8 +7,9 @@ function maxSum( arr, num ){
     for(let i=0; i <arr.length - num+1; i++){
         temp=0;
 
-        for(let j=0; j<num; j++){
+        for(let j=1; j<num; j++){
             temp += arr[i+j];
+            console.log(temp)
         }
         if (temp > max) {
             max= temp;
